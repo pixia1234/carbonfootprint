@@ -84,8 +84,10 @@ function calculate()
 	sum+=parseFloat(vals[22]*0.0001);
 	if(vals[23]!=0)
 	{
-		sum+=parseFloat(vals[23]*vals[24]*vals[25]);
+		sum+=parseFloat(vals[23]*vals[24]*vals[25]*7/365);
 	}
+	sum=parseInt(sum*100000);
+	sum/=100000;
 	var temstr="您的碳排放为"+sum+"kg/周";
 	alert(temstr);
 }
