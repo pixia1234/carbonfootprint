@@ -11,13 +11,13 @@ contact: qq:2253982911
 	if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
     var version = parseFloat(RegExp.$1);
     if(version>2.3){
-        var phoneScale = parseInt(window.screen.width)/640;
-        document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+        var phoneScale = parseInt(window.screen.width)/480;
+        document.write('<meta name="viewport" content="width=560, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
     }else{
-        document.write('<meta name="viewport" content="width=640, target-density dpi=device-dpi">');
+        document.write('<meta name="viewport" content="width=560, target-density dpi=device-dpi">');
     }
 }else{
-    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    document.write('<meta name="viewport" content="width=560, user-scalable=no, target-densitydpi=device-dpi">');
 }
 </script>
 <link href="used.css" type="text/css" rel="stylesheet">
