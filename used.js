@@ -1,13 +1,6 @@
 //autohide
-function check()
-{
-var jt=document.getElementById("ask23_0");
-if(jt.checked==1) $("#more_23").slideUp;
-if(jt.checked==0) $("#more_23").slideDown;
-}
-
 function caidan(){
-	alert("这是一个彩蛋！");
+	alert("version: beta0.1 \r\ncoded by:pixia1234");
 }
 function calculate()
 {

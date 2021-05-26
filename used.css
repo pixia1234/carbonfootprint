@@ -14,7 +14,7 @@
 }
 .main_contest{
 	margin: 1em 1.4em 1.4em 0.7em;
-	font-size: 1em;
+	font-size: 18px;
 }
 .main_submit{
 	color: aqua;
@@ -37,7 +37,7 @@ body{
 }
 p{
 	text-align: left;
-	margin: 1.2em;
+	margin: 1.1em;
 }
 .asterisk
 {
