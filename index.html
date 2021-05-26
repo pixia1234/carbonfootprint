@@ -7,18 +7,22 @@ contact: qq:2253982911
  -->
 <head>
 <meta charset="utf-8">
+<!-- dpr = 1--> <meta name="viewport" content="initial-scale=scale,maximum-scale=scale,minimum-scale=scale,user-scalable=no"> 
+<!-- dpr = 2--> <meta name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no"> 
+<!-- dpr = 3--> <meta name="viewport" content="initial-scale=0.3333333333,maximum-scale=0.3333333333,minimum-scale=0.3333333333,user-scalable=no">
 <link href="used.css" type="text/css" rel="stylesheet">
 <link href="buttons.css" type="text/css" rel="stylesheet">
 <link href="swiper-bundle.css" type="text/css" rel="stylesheet">
-<script language="javascript" src="used.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
+<script language="javascript" src="used.js"></script>
+
 <title>碳足迹计算器</title>
 </head>
 <body>
 <div align="center" class="all">
 <h1 class="button button-large button-rounded button-highlight" onClick="caidan()"><em>碳足迹计算器 </em></h1>
 <br>
-	<div class="main">
+	<div class="main" onClick="check()">
 		<div class="main_top" id="top">
 			这是一个碳足迹计算器的主页面……
 		</div>
@@ -439,6 +443,7 @@ contact: qq:2253982911
 						  
 				</p>
 			</p>
+			<div id="more_23">
 			<p>第二十四问：海的那边是敌人——一次旅游会去多远呢？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
@@ -483,6 +488,7 @@ contact: qq:2253982911
 						  
 				</p>
 			</p>
+			</div>
 			</form>
 	  		</div>
 		</div>
