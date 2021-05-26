@@ -7,7 +7,19 @@ contact: qq:2253982911
  -->
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=600,initial-scale=1, minimum-scale=0.6, maximum-scale=1.2, user-scalable=no">
+<script>
+	if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+    var version = parseFloat(RegExp.$1);
+    if(version>2.3){
+        var phoneScale = parseInt(window.screen.width)/640;
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+    }else{
+        document.write('<meta name="viewport" content="width=640, target-density dpi=device-dpi">');
+    }
+}else{
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+</script>
 <link href="used.css" type="text/css" rel="stylesheet">
 <link href="buttons.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
