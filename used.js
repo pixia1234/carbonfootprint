@@ -1,15 +1,36 @@
-// JavaScript Document
-function caidan()
+//autohide
+function check()
 {
+var jt=document.getElementById("ask23_0");
+if(jt.checked==1) $("#more_23").slideUp;
+if(jt.checked==0) $("#more_23").slideDown;
+}
+
+function caidan(){
 	alert("这是一个彩蛋！");
 }
 function calculate()
 {
-	var vals=new Array();
-	vals[1]=document.getElementById("ask1").value;
-	if(vals[1]<0) vals[1]=0;
-	var qns=new Array(2,4,5,6,7,8,9,10,11,12,13);//questions
-	var chs=new Array(4,4,4,6,4,2,4,5,4,6,4);
+	var vals=new Array();//每个问题的value
+	//计算填空题
+	var tk=new Array(1,20,21);
+	for(i=0;i<tk.length;i++)
+		{
+			var tempstr="ask"+tk[i];
+			var tempvalue=parseInt(document.getElementById(tempstr).value);
+			if(tempvalue>=0)	vals[tk[i]]=tempvalue;
+			else 
+				{
+					alert("第"+tk[i]+"题数据不合法");
+					return;
+				}
+		}
+	//填空题计算完成
+	
+	var qns=new Array(2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,22,23,24,25);
+	//单选题题号
+	var chs=new Array(4,4,4,6,4,2,4,5 ,4 ,6 ,4 ,4 , 4, 4, 4, 2, 6, 4, 4, 4, 5);
+	//每个单选题有几个选项？
 	for(x=0;x<qns.length;x++)
 	{
 		ischecked=true;
@@ -20,6 +41,12 @@ function calculate()
 			{	
 				vals[qns[x]]=document.getElementById(temstring).value;
 				ischecked=false;
+				if(qns[x]==23&&i==0 )//23题特判
+					{
+						x+=2;//跳过两题
+						vals[24]=0;
+						vals[25]=0;
+					}
 			}
 		}
 		if(ischecked) 

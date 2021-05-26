@@ -11,14 +11,30 @@ contact: qq:2253982911
 <link href="used.css" type="text/css" rel="stylesheet">
 <link href="buttons.css" type="text/css" rel="stylesheet">
 <link href="swiper-bundle.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
 <script type="text/javascript" src="jquery.js"></script>
 <script language="javascript" src="used.js"></script>
+<script>
+    $(function(){
+        
+        $(".ask23").each(function(i){
+            
+            $(this).click(function(){
+                $("#more_23").slideDown();
+                $("#more_23").eq(i).slideUp();
+            });
+    
+        });
+    })
+</script>
+
 
 <title>碳足迹计算器</title>
 </head>
 <body>
 <div align="center" class="all">
-<h1 class="button button-large button-rounded button-highlight" onClick="caidan()"><em>碳足迹计算器 </em></h1>
+<h1 class="button button-large button-rounded button-highlight" onClick="check()"><em>碳足迹计算器 </em></h1>
 <br>
 	<div class="main" onClick="check()">
 		<div class="main_top" id="top">
@@ -348,7 +364,7 @@ contact: qq:2253982911
 						  5-8份：商品有了塑料袋 一袋能当两袋拿</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask17" value="10.5"  id="ask17_3">
+						  <input required="true" type="radio" name="ask17" value="10.5" id="ask17_3">
 						  9-12份：谢邀，限塑令已收到</label>
 						  
 				</p>
@@ -424,19 +440,19 @@ contact: qq:2253982911
 			<p >第二十三问：读万里路不如行千本书（——多少时间出行旅游一次呢？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="0" id="ask23_0" onClick="return check();">
+						  <input required="true" type="radio" name="ask23" value="0" id="ask23_0" class="ask23">
 						  不旅游：御宅族</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="1"  id="ask23_1" onClick="return check();">
+						  <input required="true" type="radio" name="ask23" value="1" id="ask23_1" class="ask23">
 						  一年一次：一年の象征</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="2"  id="ask23_2" onClick="return check();">
+						  <input required="true" type="radio" name="ask23" value="2" id="ask23_2" class="ask23">
 						  一年两次：谢邀，车流量是个问题</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="4"  id="ask23_3" onClick="return check();">
+						  <input required="true" type="radio" name="ask23" value="4" id="ask23_3" class="ask23">
 						  一年四次：开阔眼界</label>
 						  
 				</p>
