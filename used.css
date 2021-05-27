@@ -72,11 +72,11 @@
 	}
 	.main_top{
 		margin: 1.5em 0.75em 0.75em 0.4em;
-		font-size: 2.5em;
+		font-size: 1.9em;
 	}
 	.main_contest{
 		margin: 1em 1.4em 1.4em 0.7em;
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	.main_submit{
 		color: aqua;
@@ -85,7 +85,7 @@
 		background-color: chartreuse;
 	}
 	.all{
-		width: 80%;
+		width: 90%;
 		max-width: 700px;
 		background-color: aliceblue;
 		margin: auto;
@@ -93,7 +93,7 @@
 	}
 	.foot{
 		text-align: right;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin: 0.4em;
 
 	}
@@ -113,8 +113,8 @@
 		width: 40%;
 	}
 	.askmargin{
-		margin-left: 3em;
-		margin-top: 1.5em;
-		margin-right: 3em;
+		margin-left: 0.5em;
+		margin-top: 0.75em;
+		margin-right: 1em;
 	}
 }
