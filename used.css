@@ -12,11 +12,11 @@
 	}
 	.main_top{
 		margin: 1.5em 0.75em 0.75em 0.4em;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.main_contest{
 		margin: 1em 1.4em 1.4em 0.7em;
-		font-size: 130%;
+		font-size: 1.2em;
 	}
 	.main_submit{
 		color: aqua;
@@ -72,11 +72,11 @@
 	}
 	.main_top{
 		margin: 1.5em 0.75em 0.75em 0.4em;
-		font-size: 1.5em;
+		font-size: 4em;
 	}
 	.main_contest{
 		margin: 1em 1.4em 1.4em 0.7em;
-		font-size: 110%;
+		font-size: 2.5em;
 	}
 	.main_submit{
 		color: aqua;
