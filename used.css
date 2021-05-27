@@ -1,57 +1,120 @@
 /* CSS Document */
-.header{
-	color: aqua;
-	text-align: center;	
-}
-.main{
-	background: #FFFFFF;
-	box-shadow: 0 1px 5px 0 rgb(0 0 0 / 5%);
-	border-radius: 2px;
-}
-.main_top{
-	margin: 1.5em 0.75em 0.75em 0.4em;
-	font-size: 1.5em;
-}
-.main_contest{
-	margin: 1em 1.4em 1.4em 0.7em;
-	font-size: 110%;
-}
-.main_submit{
-	color: aqua;
-}
-body{
-	background-color: chartreuse;
-}
-.all{
-	width: 80%;
-	max-width: 700px;
-	background-color: aliceblue;
-	margin: auto;
-	border-radius: 0.75em;
-}
-.foot{
-	text-align: right;
-	font-size: 1.5em;
-	margin: 0.4em;
-	
-}
-p{
-	text-align: left;
-	margin: 1.1em;
-}
-.asterisk
+@media screen and (min-width:561px)
 {
-	color:#ff6d56;
-	margin-left:0.4em;
-	font-size:.12rem;
-	vertical-align:top;
+	.header{
+		color: aqua;
+		text-align: center;	
+	}
+	.main{
+		background: #FFFFFF;
+		box-shadow: 0 1px 5px 0 rgb(0 0 0 / 5%);
+		border-radius: 2px;
+	}
+	.main_top{
+		margin: 1.5em 0.75em 0.75em 0.4em;
+		font-size: 2em;
+	}
+	.main_contest{
+		margin: 1em 1.4em 1.4em 0.7em;
+		font-size: 130%;
+	}
+	.main_submit{
+		color: aqua;
+	}
+	body{
+		background-color: chartreuse;
+	}
+	.all{
+		width: 80%;
+		max-width: 700px;
+		background-color: aliceblue;
+		margin: auto;
+		border-radius: 0.75em;
+	}
+	.foot{
+		text-align: right;
+		font-size: 2em;
+		margin: 0.4em;
+
+	}
+	p{
+		text-align: left;
+		margin: 1.1em;
+	}
+	.asterisk
+	{
+		color:#ff6d56;
+		margin-left:0.4em;
+		font-size:.12rem;
+		vertical-align:top;
+	}
+	.inputtext
+	{
+		width: 40%;
+	}
+	.askmargin{
+		margin-left: 3em;
+		margin-top: 1.5em;
+		margin-right: 3em;
+	}
 }
-.inputtext
+
+@media screen and (max-width : 560px )
 {
-	width: 40%;
-}
-.askmargin{
-	margin-left: 3em;
-	margin-top: 1.5em;
-	margin-right: 3em;
+	.header{
+		color: aqua;
+		text-align: center;	
+	}
+	.main{
+		background: #FFFFFF;
+		box-shadow: 0 1px 5px 0 rgb(0 0 0 / 5%);
+		border-radius: 2px;
+	}
+	.main_top{
+		margin: 1.5em 0.75em 0.75em 0.4em;
+		font-size: 1.5em;
+	}
+	.main_contest{
+		margin: 1em 1.4em 1.4em 0.7em;
+		font-size: 110%;
+	}
+	.main_submit{
+		color: aqua;
+	}
+	body{
+		background-color: chartreuse;
+	}
+	.all{
+		width: 80%;
+		max-width: 700px;
+		background-color: aliceblue;
+		margin: auto;
+		border-radius: 0.75em;
+	}
+	.foot{
+		text-align: right;
+		font-size: 1.5em;
+		margin: 0.4em;
+
+	}
+	p{
+		text-align: left;
+		margin: 1.1em;
+	}
+	.asterisk
+	{
+		color:#ff6d56;
+		margin-left:0.4em;
+		font-size:.12rem;
+		vertical-align:top;
+	}
+	.inputtext
+	{
+		width: 40%;
+	}
+	.askmargin{
+		margin-left: 3em;
+		margin-top: 1.5em;
+		margin-right: 3em;
+	}
 }
