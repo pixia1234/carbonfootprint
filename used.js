@@ -6,7 +6,7 @@ function calculate()
 {
 	var vals=new Array();//每个问题的value
 	//计算填空题
-	var tk=new Array(1,20,21);
+	var tk=new Array(18,20,21);
 	for(i=0;i<tk.length;i++)
 		{
 			var tempstr="ask"+tk[i];
@@ -20,9 +20,9 @@ function calculate()
 		}
 	//填空题计算完成
 	
-	var qns=new Array(2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,22,23,24,25);
+	var qns=new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,22,23,24);
 	//单选题题号
-	var chs=new Array(4,4,4,6,4,2,4,5 ,4 ,6 ,4 ,4 , 4, 4, 4, 4, 6, 4, 4, 4, 5);
+	var chs=new Array(6,4,6,4,4,4,4,2,4,5,4 ,4 , 4, 4, 6, 4, 4, 4, 4, 4, 5);
 	//每个单选题有几个选项？
 	for(x=0;x<qns.length;x++)
 	{
@@ -34,7 +34,7 @@ function calculate()
 			{	
 				vals[qns[x]]=document.getElementById(temstring).value;
 				ischecked=false;
-				if(qns[x]==23&&i==0 )//23题特判
+				if(qns[x]==22&&i==0 )//23题特判（已改为22题特判）
 					{
 						x+=2;//跳过两题
 					}
@@ -48,36 +48,36 @@ function calculate()
 				return;
 			}
 	}
-	var tem3=0;
+	var tem25=0;
 	for(i=0;i<5;i++)
 	{
-		var temstring="ask3_"+i;
-		if(document.getElementById(temstring).checked== 1) 	tem3+=parseInt(document.getElementById(temstring).value);
+		var temstring="ask25_"+i;
+		if(document.getElementById(temstring).checked== 1) 	tem25+=parseInt(document.getElementById(temstring).value);
 	}
-	vals[3]=tem3;
+	vals[25]=tem25;
 	var sum=0;
-	sum+=parseFloat(0.0686/vals[1]);
+	sum+=parseFloat(0.0686/vals[18]);
 	sum+=parseFloat(0.0264*vals[2]/20);
-	sum+=parseFloat(vals[3]);
-	sum+=parseFloat(vals[4]);
-	sum+=parseFloat(vals[5]*0.09);
-	sum+=parseFloat(vals[7]*0.06);
+	sum+=parseFloat(vals[25]);
+	sum+=parseFloat(vals[6]);
+	sum+=parseFloat(vals[7]*0.09);
+	sum+=parseFloat(vals[5]*0.06);
 	sum+=parseFloat(vals[8]*(vals[9]*vals[10]));
 	sum+=parseFloat(vals[11]*25/12);
-	sum+=parseFloat(vals[12]*0.006);
-	sum+=parseFloat(vals[13]*0.005);
-	sum+=parseFloat(vals[14]*0.5*7);
-	sum+=parseFloat(vals[15]*0.3*7);
-	sum+=parseFloat(vals[16]*0.8*7);
-	sum+=parseFloat(vals[17]*0.0001);
-	sum+=parseFloat(vals[18]*0.096);
-	sum+=parseFloat(vals[19]);
+	sum+=parseFloat(vals[3]*0.006);
+	sum+=parseFloat(vals[4]*0.005);
+	sum+=parseFloat(vals[12]*0.5*7);
+	sum+=parseFloat(vals[13]*0.3*7);
+	sum+=parseFloat(vals[14]*0.8*7);
+	sum+=parseFloat(vals[16]*0.0001);
+	sum+=parseFloat(vals[19]*0.096);
+	sum+=parseFloat(vals[15]);
 	sum+=parseFloat(vals[20]*0.621*60/52);
 	sum+=parseFloat(vals[21]*0.5*30/52);
-	sum+=parseFloat(vals[22]*0.0001);
-	if(vals[23]!=0)
+	sum+=parseFloat(vals[17]*0.0001);
+	if(vals[22]!=0)
 	{
-		sum+=parseFloat(vals[23]*vals[24]*vals[25]*7/365);
+		sum+=parseFloat(vals[22]*vals[23]*vals[24]*7/365);
 	}
 	sum=parseInt(sum*100000);
 	sum/=100000;

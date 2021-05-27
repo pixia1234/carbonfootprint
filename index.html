@@ -29,10 +29,10 @@ contact: qq:2253982911
 <script language="javascript" src="used.js"></script>
 <script>
     $(function(){
-        $(".ask23").each(function(i){
+        $(".ask22").each(function(i){
             $(this).click(function(){
-                $("#more_23").slideDown();
-                $("#more_23").eq(i).slideUp();
+                $("#more_22").slideDown();
+                $("#more_22").eq(i).slideUp();
             });
     
         });
@@ -52,10 +52,34 @@ contact: qq:2253982911
 		</div>
 		<div class="main_contest" id="contest">
 		  <form id="mainask">
-			<p>
-				第一问：一包纸你能使用多少时间呢？<span class="asterisk" >*</span>
-			  <input required="true" type="number" name="ask1" id="ask1" placeholder="100" min= "0" class="inputtext">（天）
-				</p> 
+			<p>第一问：恕我冒昧，请问你的年级是？<span class="asterisk" >*</span><br>
+					<p>
+					<label class="askmargin">
+					  <input required="true" type="radio" name="ask1" value="1" id="ask1_0">
+					  初一：新来乍到，初体验了社会的险恶</label>
+						<br>
+					<label class="askmargin">
+					  <input required="true" type="radio" name="ask1" value="2" id="ask1_1">
+					  初二：啊嘞怎么初中内容学差不多了</label>
+						<br>
+					<label class="askmargin">
+					  <input required="true" type="radio" name="ask1" value="3" id="ask1_2">
+					  初三：我爱中考</label>
+					<br>
+					<label class="askmargin">
+					  <input required="true" type="radio" name="ask1" value="4" id="ask1_3">
+					  高一：数理化：we’re free</label>
+						<br>
+					<label class="askmargin">
+					  <input required="true" type="radio" name="ask1" value="5" id="ask1_4">
+					  高二：作业已加入肯德基豪华套餐</label>
+						<br>
+					<label class="askmargin">
+					  <input required="true" type="radio" name="ask1" value="6" id="ask1_5">
+					  高三：苟非吾之所有，虽一毫而莫取</label>
+				</p>
+				</p>
+			
 			<p> 第二问：一学期你会多少次在考试的绝境包围圈里杀出一条血路呢？<span class="asterisk" >*</span></p>
 			<p>
 			    <label class="askmargin">
@@ -74,112 +98,111 @@ contact: qq:2253982911
 			      <input required="true" type="radio" name="ask2" value="10.5" id="ask2_3">
 			      9-12次：毁灭吧赶紧的</label>
 		    </p>
-			<p>第三问：小小习惯，大大世界————你做到了以下哪些绿色习惯呢？<span class="asterisk" >*</span><br>
-			  <label>
-			    <input required="true" type="checkbox" name="ask3" value="1.323" id="ask3_0" style="margin-left: 40px;">
-			    使用节能灯泡</label>
-			  <br>
-			  <label>
-			    <input required="true" type="checkbox" name="ask3" value="0.096" id="ask3_1" style="margin-left: 40px;">
-			    随手关灯</label>
-			  <br>
-			  <label>
-			    <input required="true" type="checkbox" name="ask3" value="0.115" id="ask3_2" style="margin-left: 40px;">
-			    随手关闭电器</label>
-			  <br>
-			  <label>
-			    <input required="true" type="checkbox" name="ask3" value="0.805" id="ask3_3" style="margin-left: 40px;">
-			    循环使用部分废旧物品</label>
-			  <br>
-			  <label>
-			    <input required="true" type="checkbox" name="ask3" value="0.729" id="ask3_4" style="margin-left: 40px;">
-			    使用太阳能热水器</label>
-			  <br>
-            </p>
-			<p>第四问：一周你会产生多少快递呢？<span class="asterisk" >*</span><br>
-				<p>
-			    <label class="askmargin">
-			      <input required="true" type="radio" name="ask4" value="1.946" id="ask4_0">
-			      一天一件：对外依赖性极强</label>
-					<br>
-			    <label class="askmargin">
-			      <input required="true" type="radio" name="ask4" value="0.834" id="ask4_1">
-			      一周三件：快递虽少五脏俱全</label>
-					<br>
-			    <label class="askmargin">
-			      <input required="true" type="radio" name="ask4" value="0.278" id="ask4_2">
-			      一周一件：不感冒</label>
-					<br>
-				<label class="askmargin">
-			      <input required="true" type="radio" name="ask4" value="0" id="ask4_3">
-			      没有快递：反对消费主义从我做起  </label>
-		    </p>
-			</p>
-			<p>第五问：肥宅快乐水——你一周会买多少瓶饮料呢？<span class="asterisk" >*</span><br>
-				<p>
-			    <label class="askmargin">
-			      <input required="true" type="radio" name="ask5" value="14" id="ask5_0">
-			      一天两瓶：过量小命不保</label>
-					<br>
-			    <label class="askmargin">
-			      <input required="true" type="radio" name="ask5" value="3.5" id="ask5_1">
-			      两天一瓶：适量提神醒脑</label>
-			    <br>
-			    <label class="askmargin">
-			      <input required="true" type="radio" name="ask5" value="1" id="ask5_2">
-			      一周一瓶：少喝身体好好</label>
-					<br>
-				<label class="askmargin">
-			      <input required="true" type="radio" name="ask5" value="0" id="ask5_3">
-			      我不喝饮料：养老</label>
-		    	</p>
-				</p>
-			<p>第六问：恕我冒昧，请问你的年级是？<span class="asterisk" >*</span><br>
+			<p>第三问：作业者，万恶之源也——作业可真是烦躁呢~每天你会淹没在多大规模的作业钢铁洪流之中呢？<span class="asterisk" >*</span>
 					<p>
-					<label class="askmargin">
-					  <input required="true" type="radio" name="ask6" value="1" id="ask6_0">
-					  初一：新来乍到，初体验了社会的险恶</label>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask3" value="1.5" id="ask3_0">
+						  莫得压力，三页以下</label>
 						<br>
-					<label class="askmargin">
-					  <input required="true" type="radio" name="ask6" value="2" id="ask6_1">
-					  初二：啊嘞怎么初中内容学差不多了</label>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask3" value="4" id="ask3_1">
+						  还行叭，三页到五页之间 </label>
 						<br>
-					<label class="askmargin">
-					  <input required="true" type="radio" name="ask6" value="3" id="ask6_2">
-					  初三：我爱中考</label>
-					<br>
-					<label class="askmargin">
-					  <input required="true" type="radio" name="ask6" value="4" id="ask6_3">
-					  高一：数理化：we’re free</label>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask3" value="6.5" id="ask3_2">
+						  不大轻松，五页到八页之间</label>
 						<br>
-					<label class="askmargin">
-					  <input required="true" type="radio" name="ask6" value="5" id="ask6_4">
-					  高二：作业已加入肯德基豪华套餐</label>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask3" value="10.5" id="ask3_3">
+						  我受不了啦，九页到十二页之间 </label>
 						<br>
-					<label class="askmargin">
-					  <input required="true" type="radio" name="ask6" value="6" id="ask6_5">
-					  高三：苟非吾之所有，虽一毫而莫取</label>
-				</p>
-				</p>
-			<p>第七问：笔是你的枪：一周有多少支笔在你的手中完成了它的使命呢？（包括中性笔，铅笔，签字笔，记号笔和圆珠笔等）<span class="asterisk" >*</span><br>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask3" value="12" id="ask3_4">
+						  如果我活着，请对我的老婆说：我爱学习——十二页以上 </label>
+						<br>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask3" value="0" id="ask3_5">
+						  正经人谁写作业啊，不可能的，这辈子都不可能的 </label>
+					</p>
+			</p>
+			<p>第四问：草稿纸是生草的圣地——一周你会在多少草稿纸上涂抹内卷的血与泪呢？<span class="asterisk" >*</span><br>
+					<p>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask4" value="0" id="ask4_0">
+						  0张：试卷是我家，草稿乱涂靠大家 </label>
+						<br>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask4" value="2" id="ask4_1">
+						  2张：心算yyds  </label>
+						<br>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask4" value="5" id="ask4_2">
+						  5张：琴棋书画随心所欲（欸不对 </label>
+						<br>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask4" value="10" id="ask4_3">
+						  8张及以上：草稿纸是个好东西，可惜让你变成了垃圾</label>
+					</p>
+			</p>
+			
+			<p>第五问：笔是你的枪：一周有多少支笔在你的手中完成了它的使命呢？（包括中性笔，铅笔，签字笔，记号笔和圆珠笔等）<span class="asterisk" >*</span><br>
 				<p>
 					<label class="askmargin">
-					  <input required="true" type="radio" name="ask7" value="2.3" id="ask7_0">
+					  <input required="true" type="radio" name="ask5" value="2.3" id="ask5_0">
 					  三天一只：我家是批发笔的</label>
 					<br>
 					<label class="askmargin">
-					  <input required="true" type="radio" name="ask7" value="1" id="ask7_1">
+					  <input required="true" type="radio" name="ask5" value="1" id="ask5_1">
 					  一周一只：努力必有收获</label>
 					<br>
 					<label class="askmargin">
-					  <input required="true" type="radio" name="ask7" value="0.5" id="ask7_2">
+					  <input required="true" type="radio" name="ask5" value="0.5" id="ask5_2">
 					  两周一只：比偶像还专心——毕竟是我的命根子</label>
 					<br>
 					<label class="askmargin">
-					  <input required="true" type="radio" name="ask7" value="0.25" id="ask7_3">
+					  <input required="true" type="radio" name="ask5" value="0.25" id="ask5_3">
 					  一月一只：意识流学生</label>
 				</p>
 				</p>
+			<p>第六问：一周你会产生多少快递呢？<span class="asterisk" >*</span><br>
+				<p>
+			    <label class="askmargin">
+			      <input required="true" type="radio" name="ask6" value="1.946" id="ask6_0">
+			      一天一件：对外依赖性极强</label>
+					<br>
+			    <label class="askmargin">
+			      <input required="true" type="radio" name="ask6" value="0.834" id="ask6_1">
+			      一周三件：快递虽少五脏俱全</label>
+					<br>
+			    <label class="askmargin">
+			      <input required="true" type="radio" name="ask6" value="0.278" id="ask6_2">
+			      一周一件：不感冒</label>
+					<br>
+				<label class="askmargin">
+			      <input required="true" type="radio" name="ask6" value="0" id="ask6_3">
+			      没有快递：反对消费主义从我做起  </label>
+		    </p>
+			</p>
+			<p>第七问：肥宅快乐水——你一周会买多少瓶饮料呢？<span class="asterisk" >*</span><br>
+				<p>
+			    <label class="askmargin">
+			      <input required="true" type="radio" name="ask7" value="14" id="ask7_0">
+			      一天两瓶：过量小命不保</label>
+					<br>
+			    <label class="askmargin">
+			      <input required="true" type="radio" name="ask7" value="3.5" id="ask7_1">
+			      两天一瓶：适量提神醒脑</label>
+			    <br>
+			    <label class="askmargin">
+			      <input required="true" type="radio" name="ask7" value="1" id="ask7_2">
+			      一周一瓶：少喝身体好好</label>
+					<br>
+				<label class="askmargin">
+			      <input required="true" type="radio" name="ask7" value="0" id="ask7_3">
+			      我不喝饮料：养老</label>
+		    	</p>
+				</p>
+			
 				<p>第八问：你是快乐的走读生吗~<span class="asterisk" >*</span><br>
 					<p>
 						<label class="askmargin">
@@ -252,181 +275,163 @@ contact: qq:2253982911
 						  6-8身：明天穿什么好呢 </label>
 					</p>
 			</p>
-			<p>第十二问：作业者，万恶之源也——作业可真是烦躁呢~每天你会淹没在多大规模的作业钢铁洪流之中呢？<span class="asterisk" >*</span>
-					<p>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask12" value="1.5" id="ask12_0">
-						  莫得压力，三页以下</label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask12" value="4" id="ask12_1">
-						  还行叭，三页到五页之间 </label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask12" value="6.5" id="ask12_2">
-						  不大轻松，五页到八页之间</label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask12" value="10.5" id="ask12_3">
-						  我受不了啦，九页到十二页之间 </label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask12" value="12" id="ask12_4">
-						  如果我活着，请对我的老婆说：我爱学习——十二页以上 </label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask12" value="0" id="ask12_5">
-						  正经人谁写作业啊，不可能的，这辈子都不可能的 </label>
-					</p>
-			</p>
-			<p>第十三问：草稿纸是生草的圣地——一周你会在多少草稿纸上涂抹内卷的血与泪呢？<span class="asterisk" >*</span><br>
-					<p>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask13" value="0" id="ask13_0">
-						  0张：试卷是我家，草稿乱涂靠大家 </label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask13" value="2" id="ask13_1">
-						  2张：心算yyds  </label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask13" value="5" id="ask13_2">
-						  5张：琴棋书画随心所欲（欸不对 </label>
-						<br>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask13" value="10" id="ask13_3">
-						  8张及以上：草稿纸是个好东西，可惜让你变成了垃圾</label>
-					</p>
-			</p>
-			<p>第十四问：匆忙的起床铃间，又是元气满满的一天——早饭会点多少份小吃？<span class="asterisk">*</span><br>
+			
+			
+			<p>第十二问：匆忙的起床铃间，又是元气满满的一天——早饭会点多少份小吃？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask14" value="1" id="ask14_0">
+						  <input required="true" type="radio" name="ask12" value="1" id="ask12_0">
 						  1份：省钱万岁</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask14" value="2"  id="ask14_1">
+						  <input required="true" type="radio" name="ask12" value="2"  id="ask12_1">
 						  2份:骑士不空腹而卷</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask14" value="3"  id="ask14_2">
+						  <input required="true" type="radio" name="ask12" value="3"  id="ask12_2">
 						  3份：真香</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask14" value="4"  id="ask14_3">
+						  <input required="true" type="radio" name="ask12" value="4"  id="ask12_3">
 						  4份：能分我一份吗</label>
 						  
 				</p>
 				
 				</p>
-				<p>第十五问：轻口味——午饭和晚饭一共点多少份素菜和小荤？<span class="asterisk">*</span><br>
+				<p>第十三问：轻口味——午饭和晚饭一共点多少份素菜和小荤？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask15" value="1" id="ask15_0">
+						  <input required="true" type="radio" name="ask13" value="1" id="ask13_0">
 						  1份：装点门面</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask15" value="2"  id="ask15_1">
+						  <input required="true" type="radio" name="ask13" value="2"  id="ask13_1">
 						  2份：浅尝辄止</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask15" value="3"  id="ask15_2">
+						  <input required="true" type="radio" name="ask13" value="3"  id="ask13_2">
 						  3份：素食主义者</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask15" value="4"  id="ask15_3">
+						  <input required="true" type="radio" name="ask13" value="4"  id="ask13_3">
 						  4份：肉会长肉</label>
 						  
 				</p>
 			</p>
-			<p>第十六问：吃点好的——午饭和晚饭一共点多少份荤菜？<span class="asterisk">*</span><br>
+			<p>第十四问：吃点好的——午饭和晚饭一共点多少份荤菜？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask16" value="1" id="ask16_0">
+						  <input required="true" type="radio" name="ask14" value="1" id="ask14_0">
 						  1份：香</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask16" value="2"  id="ask16_1">
+						  <input required="true" type="radio" name="ask14" value="2"  id="ask14_1">
 						  2份：就是香</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask16" value="3"  id="ask16_2">
+						  <input required="true" type="radio" name="ask14" value="3"  id="ask14_2">
 						  3份：爆香</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask16" value="4"  id="ask16_3">
+						  <input required="true" type="radio" name="ask14" value="4"  id="ask14_3">
 						  4份：吃饱了才有力气减肥</label>
 						  
 				</p>
 			</p>
-			<p>第十七问：白色垃圾——一周使用多少塑料袋？<span class="asterisk">*</span><br>
+			<p>第十五问：小确幸——你会多久买一次课间餐或夜宵呢？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask17" value="1.5" id="ask17_0">
-						  1-2袋：塑料袋是什么 能卷吗</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask17" value="3.5"  id="ask17_1">
-						  3-4份：人类自律有多可怕</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask17" value="6.5"  id="ask17_2">
-						  5-8份：商品有了塑料袋 一袋能当两袋拿</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask17" value="10.5" id="ask17_3">
-						  9-12份：谢邀，限塑令已收到</label>
-						  
-				</p>
-			</p>
-			<p>第十八问：高科技——一周使用多长时间的电子设备呢？（手机，电脑，翻译笔，电视和收音机皆可哦~）<span class="asterisk">*</span><br>
-				<p>
-						<label class="askmargin">
-						  <input required="true" type="radio" name="ask18" value="1" id="ask18_0">
-						  0小时：from 一世纪前</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask18" value="3"  id="ask18_1">
-						  1-5小时：手机是什么 能内卷吗</label>
-							<br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask18" value="10.5" id="ask18_2">
-						  6-15小时：紧跟时事</label>
-							<br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask18" value="20"  id="ask18_3">
-						  16-25小时：IT行业未来可期</label>
-						  
-				</p>
-			</p>
-			<p>第十九问：小确幸——你会多久买一次课间餐或夜宵呢？<span class="asterisk">*</span><br>
-				<p>
-					<label class="askmargin">
-						  <input required="true" type="radio" name="ask19" value="0" id="ask19_0">
+						  <input required="true" type="radio" name="ask15" value="0" id="ask15_0">
 						  从来不买：大可不必</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask19" value="5"  id="ask19_1">
+						  <input required="true" type="radio" name="ask15" value="5"  id="ask15_1">
 						  每天都买：每天一加餐，自信内卷人</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask19" value="3"  id="ask19_2">
+						  <input required="true" type="radio" name="ask15" value="3"  id="ask15_2">
 						  一周3次：随机应变</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask19" value="1"  id="ask19_3">
+						  <input required="true" type="radio" name="ask15" value="1"  id="ask15_3">
 						  一周一次：就吃你了</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask19" value="0.5"  id="ask19_4">
+						  <input required="true" type="radio" name="ask15" value="0.5"  id="ask15_4">
 						  一月2次：节省经费</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask19" value="0.25"  id="ask19_5">
+						  <input required="true" type="radio" name="ask15" value="0.25"  id="ask15_5">
 						  一月1次</label>
 						  
 				</p>
 			</p>
+			<p>第十六问：白色垃圾——一周使用多少塑料袋？<span class="asterisk">*</span><br>
+				<p>
+					<label class="askmargin">
+						  <input required="true" type="radio" name="ask16" value="1.5" id="ask16_0">
+						  1-2袋：塑料袋是什么 能卷吗</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask16" value="3.5"  id="ask16_1">
+						  3-4份：人类自律有多可怕</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask16" value="6.5"  id="ask16_2">
+						  5-8份：商品有了塑料袋 一袋能当两袋拿</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask16" value="10.5" id="ask16_3">
+						  9-12份：谢邀，限塑令已收到</label>
+						  
+				</p>
+			</p>
+			<p>第十七问：我从哪里来？——家里和宿舍里会产生多少垃圾呢？<span class="asterisk">*</span><br>
+				<p>
+					<label class="askmargin">
+						  <input required="true" type="radio" name="ask17" value="7" id="ask17_0">
+						  1天1个垃圾袋：我们不是垃圾的生产者，只是搬运工</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask17" value="14"  id="ask17_1">
+						  1天2个垃圾袋：平均水平</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask17" value="22.5"  id="ask17_2">
+						  1天3-4个垃圾袋：投放？</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask17" value="37.5"  id="ask17_3">
+						  1天5-6个垃圾袋：小垃圾大麻烦</label>
+						  
+				</p>
+			</p>
+			
+			<p>
+				第十八问：人类的第一干燥剂——用完一卷或一包抽纸，面巾纸需要多少天呢？<span class="asterisk" >*</span>
+			  <input required="true" class="inputtext" type="number" name="ask18" id="ask18" placeholder="30" min= "0" >（天）
+				</p> 
+			<p>第十九问：高科技——一周使用多长时间的电子设备呢？（手机，电脑，翻译笔，电视和收音机皆可哦~）<span class="asterisk">*</span><br>
+				<p>
+						<label class="askmargin">
+						  <input required="true" type="radio" name="ask19" value="1" id="ask19_0">
+						  0小时：from 一世纪前</label>
+						  <br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask19" value="3"  id="ask19_1">
+						  1-5小时：手机是什么 能内卷吗</label>
+							<br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask19" value="10.5" id="ask19_2">
+						  6-15小时：紧跟时事</label>
+							<br>
+						  <label class="askmargin">
+						  <input required="true" type="radio" name="ask19" value="20"  id="ask19_3">
+						  16-25小时：IT行业未来可期</label>
+						  
+				</p>
+			</p>
+			
 			<p>
 				第二十问：夏天时家里每天会开多长时间的凉气空调呢？<span class="asterisk" >*</span>
 			  <input required="true" type="number" name="ask20" id="ask20" placeholder="5" min= "0" class="inputtext">（小时）
@@ -435,91 +440,94 @@ contact: qq:2253982911
 				第二十一问：冬天时家里每天会开多长时间的暖气空调呢？<span class="asterisk" >*</span>
 			  <input required="true" type="number" name="ask21" id="ask21" placeholder="5" min= "0" class="inputtext">（小时）
 				</p>
-			<p>第二十二问：我从哪里来？——家里和宿舍里会产生多少垃圾呢？<span class="asterisk">*</span><br>
+			
+			<p >第二十二问：读万里路不如行千本书（——多少时间出行旅游一次呢？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask22" value="7" id="ask22_0">
-						  1天1个垃圾袋：我们不是垃圾的生产者，只是搬运工</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask22" value="14"  id="ask22_1">
-						  1天2个垃圾袋：平均水平</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask22" value="22.5"  id="ask22_2">
-						  1天3-4个垃圾袋：投放？</label>
-						  <br>
-						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask22" value="37.5"  id="ask22_3">
-						  1天5-6个垃圾袋：小垃圾大麻烦</label>
-						  
-				</p>
-			</p>
-			<p >第二十三问：读万里路不如行千本书（——多少时间出行旅游一次呢？<span class="asterisk">*</span><br>
-				<p>
-					<label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="0" id="ask23_0" class="ask23">
+						  <input required="true" type="radio" name="ask22" value="0" id="ask22_0" class="ask22">
 						  不旅游：御宅族</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="1" id="ask23_1" class="ask23">
+						  <input required="true" type="radio" name="ask22" value="1" id="ask22_1" class="ask22">
 						  一年一次：一年の象征</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="2" id="ask23_2" class="ask23">
+						  <input required="true" type="radio" name="ask22" value="2" id="ask22_2" class="ask22">
 						  一年两次：谢邀，车流量是个问题</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask23" value="4" id="ask23_3" class="ask23">
+						  <input required="true" type="radio" name="ask22" value="4" id="ask22_3" class="ask22">
 						  一年四次：开阔眼界</label>
 						  
 				</p>
 			</p>
-			<div id="more_23">
-			<p>第二十四问：海的那边是敌人——一次旅游会去多远呢？<span class="asterisk">*</span><br>
+			<div id="more_22">
+			<p>第二十三问：海的那边是敌人——一次旅游会去多远呢？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask24" value="300" id="ask24_0">
+						  <input required="true" type="radio" name="ask23" value="300" id="ask23_0">
 						  300km内：逛 窑</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask24" value="650"  id="ask24_1">
+						  <input required="true" type="radio" name="ask23" value="650"  id="ask23_1">
 						  300km-1000km：远 足</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask24" value="1500"  id="ask24_2">
+						  <input required="true" type="radio" name="ask23" value="1500"  id="ask23_2">
 						  1000km-2000km：起 飞</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask24" value="3500"  id="ask24_3">
+						  <input required="true" type="radio" name="ask23" value="3500"  id="ask23_3">
 						  2000km-5000km：扶 摇 直 上</label>
 						  
 				</p>
 			</p>
-			<p>第二十五问：你会选择什么交通工具旅行呢？<span class="asterisk">*</span><br>
+			<p>第二十四问：你会选择什么交通工具旅行呢？<span class="asterisk">*</span><br>
 				<p>
 					<label class="askmargin">
-						  <input required="true" type="radio" name="ask25" value="0.001" id="ask25_0">
+						  <input required="true" type="radio" name="ask24" value="0.001" id="ask24_0">
 						  步行或自行车：欢迎马拉松选手</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask25" value="0.07"  id="ask25_1">
+						  <input required="true" type="radio" name="ask24" value="0.07"  id="ask24_1">
 						  客车（跟团旅行常用）：堵</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask25" value="0.4"  id="ask25_2">
+						  <input required="true" type="radio" name="ask24" value="0.4"  id="ask24_2">
 						  私家车：堵er</label>
 						  <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask25" value="0.1"  id="ask25_3">
+						  <input required="true" type="radio" name="ask24" value="0.1"  id="ask24_3">
 						  高铁：堵，但不完全堵</label>
 						   <br>
 						  <label class="askmargin">
-						  <input required="true" type="radio" name="ask25" value="0.5"  id="ask25_4">
+						  <input required="true" type="radio" name="ask24" value="0.5"  id="ask24_4">
 						  飞机：只在于目的地</label>
 						  
 				</p>
 			</p>
+			<p>第二十五问：小小习惯，大大世界————你做到了以下哪些绿色习惯呢？<span class="asterisk" >*</span><br>
+			  <label>
+			    <input required="true" type="checkbox" name="ask25" value="1.323" id="ask25_0" style="margin-left: 40px;">
+			    使用节能灯泡</label>
+			  <br>
+			  <label>
+			    <input required="true" type="checkbox" name="ask25" value="0.096" id="ask25_1" style="margin-left: 40px;">
+			    随手关灯</label>
+			  <br>
+			  <label>
+			    <input required="true" type="checkbox" name="ask25" value="0.115" id="ask25_2" style="margin-left: 40px;">
+			    随手关闭电器</label>
+			  <br>
+			  <label>
+			    <input required="true" type="checkbox" name="ask25" value="0.805" id="ask25_3" style="margin-left: 40px;">
+			    循环使用部分废旧物品</label>
+			  <br>
+			  <label>
+			    <input required="true" type="checkbox" name="ask25" value="0.729" id="ask25_4" style="margin-left: 40px;">
+			    使用太阳能热水器</label>
+			  <br>
+            </p>
 			</div>
 			</form>
 	  		</div>
